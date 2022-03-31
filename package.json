@@ -9,7 +9,6 @@
   "author": "Mihail Bezmolenko",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.6.0",
     "google-tts-api": "0.0.4",
     "node-qiwi-api": "^1.1.1",
 		"@vkontakte/vk-qr": "^2.0.9",
