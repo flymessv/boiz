@@ -9,6 +9,7 @@
   "author": "Mihail Bezmolenko",
   "license": "ISC",
   "dependencies": {
+	  	"process-env": "^2.0.2",
 		"chokidar": "^3.2.2",
 		"clear-module": "^4.0.0",
 		"cron": "^1.7.1",
