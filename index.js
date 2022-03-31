@@ -212,7 +212,7 @@ return true;
 }
 
 
-vk.setOptions({ token: 'process.env.SECRET_TOKEN', pollingGroupId: 181184435 });
+vk.setOptions({ token: process.env.SECRET_TOKEN, pollingGroupId: 181184435 });
 const { updates, snippets } = vk;
 updates.startPolling();
 updates.on('message', async (message) => {
