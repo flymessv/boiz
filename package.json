@@ -111,7 +111,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "tcp-ping": "^0.1.1",
-    "vk-io": "^4.0.0-rc.29"
+    "vk-io": "^4.0.0-rc.8",
     "sandwich-stream": "^2.0.2",
     "sshpk": "^1.15.2",
     "tough-cookie": "^2.4.3",
