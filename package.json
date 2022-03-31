@@ -9,13 +9,6 @@
   "author": "Mihail Bezmolenko",
   "license": "ISC",
   "dependencies": {
-    "google-tts-api": "0.0.4",
-    "node-qiwi-api": "^1.1.1",
-		"@vkontakte/vk-qr": "^2.0.9",
-		"async-redis": "^1.1.7",
-		"await-event-emitter": "^1.2.0",
-		"body-parser": "^1.19.0",
-		"canvas": "^2.6.0",
 		"chokidar": "^3.2.2",
 		"clear-module": "^4.0.0",
 		"cron": "^1.7.1",
