@@ -212,7 +212,7 @@ return true;
 }
 
 
-vk.setOptions({ token: process.env.SECRET_TOKEN, pollingGroupId: 181184435 });
+vk.setOptions({ token: 'process.env.SECRET_TOKEN', pollingGroupId: 181184435 });
 const { updates, snippets } = vk;
 updates.startPolling();
 updates.on('message', async (message) => {
@@ -848,10 +848,7 @@ return bot(`📣имя соперника - ${user.tag}.`)}
 //---------------------------------------[Поиск]----------------------------------------//
 cmd.hear(/^(?:🔎Поиск|Поиск|🔎 Поиск)/i, async (message, bot) => {
 message.user.LeaveBan = true; message.user.SearchBan = true; message.user.Poisk = false;
-if (message.user.uid !== 3) {await bot(`Введите ID. Правда, тут еще никого нет... Кроме создателя 😔`);}
-if (message.user.uid == 3) {
 await bot(`Введите ID.`);
-}
 message.user.CanSearch = true;
 message.user.SearchBan = false;  
 // рандомное число от 0 до ~. если юзера нет - свободно, есть - выводим его. / пока оставляем так.
@@ -24861,7 +24858,6 @@ return;
 
 
 cmd.hear(/^(✅Согласен|согласен)$/i, async (message, bot) => {
-return bot(`в разработке...`)
 message.user.pve.FirstLocationOfWitch = true;
 message.send(`[👾Ведьма]: Я очень рада, что ты согласился. Нужно немного ввести тебя в курс дела: существуют несколько злодеев, которых нужно победить, - боссы. Сама я не справлюсь, но в тебе вижу огромный потенциал, к тому же без помощи ты не останешься.`,
 {
